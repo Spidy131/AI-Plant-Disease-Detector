@@ -1,0 +1,38 @@
+# Python environment
+.venv/
+venv/
+
+# Secrets
+.env
+.env.*
+
+# Large training dataset
+datasets/
+
+# Temporary files
+temp/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Unused / development files
+app/
+images/
+dataset_tools/
+
+# Development test scripts
+test_config.py
+test_data_loader.py
+test_gemini.py
+test_local_model.py
+test_path.py
+test_rag.py

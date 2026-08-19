@@ -1,0 +1,82 @@
+[
+    {
+        "disease": "Tomato Bacterial Spot",
+        "plant": "Tomato",
+        "symptoms": "Small dark brown to black spots on leaves, sometimes with yellow halos. Spots may also appear on stems and fruits.",
+        "cause": "Bacterial infection commonly associated with Xanthomonas species.",
+        "treatment": "Remove severely infected plant material and use an appropriate copper-based bactericide according to the product label.",
+        "prevention": "Use disease-free seeds and transplants, avoid overhead watering, improve air circulation, and sanitize gardening tools."
+    },
+    {
+        "disease": "Tomato Early Blight",
+        "plant": "Tomato",
+        "symptoms": "Dark brown spots with concentric rings, commonly appearing first on older leaves.",
+        "cause": "Alternaria solani fungus.",
+        "treatment": "Remove infected leaves and use an appropriate fungicide according to the product label.",
+        "prevention": "Rotate crops, avoid overhead watering, improve air circulation, and remove infected plant debris."
+    },
+    {
+        "disease": "Tomato Late Blight",
+        "plant": "Tomato",
+        "symptoms": "Large dark water-soaked patches on leaves that can expand rapidly. White fungal-like growth may appear under humid conditions.",
+        "cause": "Phytophthora infestans.",
+        "treatment": "Remove severely infected material and use an appropriate fungicide according to the product label.",
+        "prevention": "Avoid prolonged leaf wetness, improve air circulation, provide adequate plant spacing, and remove infected debris."
+    },
+    {
+        "disease": "Tomato Leaf Mold",
+        "plant": "Tomato",
+        "symptoms": "Yellowish patches appear on the upper leaf surface while olive-green to brown mold-like growth may develop on the underside.",
+        "cause": "Fungal infection associated with high humidity and poor air circulation.",
+        "treatment": "Remove heavily infected leaves and improve ventilation. Use an appropriate fungicide when necessary and follow the product label.",
+        "prevention": "Reduce humidity, improve air circulation, avoid prolonged leaf wetness, and provide adequate spacing between plants."
+    },
+    {
+        "disease": "Tomato Septoria Leaf Spot",
+        "plant": "Tomato",
+        "symptoms": "Small circular spots with dark borders and lighter centers, often developing numerous small spots on older leaves.",
+        "cause": "Septoria lycopersici fungus.",
+        "treatment": "Remove infected leaves and use an appropriate fungicide according to the product label.",
+        "prevention": "Avoid overhead watering, improve air circulation, remove infected plant debris, and maintain good garden sanitation."
+    },
+    {
+        "disease": "Tomato Spider Mites",
+        "plant": "Tomato",
+        "symptoms": "Fine yellow or pale speckling on leaves, leaf discoloration, drying, and sometimes fine webbing on severely affected plants.",
+        "cause": "Spider mite infestation, including two-spotted spider mites.",
+        "treatment": "Remove severely affected leaves and use an appropriate miticide or other approved control method according to the product label.",
+        "prevention": "Regularly inspect leaves, maintain appropriate plant health, reduce excessive dust, and manage infestations early."
+    },
+    {
+        "disease": "Tomato Target Spot",
+        "plant": "Tomato",
+        "symptoms": "Dark circular leaf spots that can develop concentric rings resembling a target. Spots may enlarge and cause leaf damage.",
+        "cause": "Fungal infection caused by Corynespora cassiicola.",
+        "treatment": "Remove affected plant material and use an appropriate fungicide according to the product label.",
+        "prevention": "Avoid overhead watering, improve air circulation, maintain adequate plant spacing, and remove infected debris."
+    },
+    {
+        "disease": "Tomato Yellow Leaf Curl Virus",
+        "plant": "Tomato",
+        "symptoms": "Leaves may curl upward, become smaller and yellow, and plant growth may become stunted.",
+        "cause": "Tomato yellow leaf curl virus, commonly spread by whiteflies.",
+        "treatment": "Remove severely infected plants where appropriate and manage the insect vector according to local recommendations.",
+        "prevention": "Control whiteflies, use healthy planting material, remove infected plants, and manage weeds that can harbor vectors."
+    },
+    {
+        "disease": "Tomato Mosaic Virus",
+        "plant": "Tomato",
+        "symptoms": "Mottled light and dark green patterns on leaves, distorted foliage, and possible reduction in plant growth.",
+        "cause": "Tomato mosaic virus infection.",
+        "treatment": "Remove infected plants or plant material where appropriate because there is no curative treatment for the virus.",
+        "prevention": "Use clean tools and healthy planting material, avoid handling plants with contaminated hands, and remove infected plant debris."
+    },
+    {
+        "disease": "Tomato Healthy",
+        "plant": "Tomato",
+        "symptoms": "Leaves appear green and healthy with no obvious disease symptoms or significant pest damage.",
+        "cause": "No visible disease detected.",
+        "treatment": "No disease treatment is required. Continue normal plant care.",
+        "prevention": "Maintain appropriate watering, nutrition, sunlight, air circulation, and regular inspection for pests and diseases."
+    }
+]
