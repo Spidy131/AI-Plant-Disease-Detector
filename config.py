@@ -1,6 +1,7 @@
 import os
 from pathlib import Path
 from dotenv import load_dotenv
+import streamlit as st
 
 # ==============================
 # Load Environment Variables
@@ -10,7 +11,12 @@ load_dotenv()
 # ==============================
 # Gemini Configuration
 # ==============================
-GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+
+if "GEMINI_API_KEY" in st.secrets:
+    GEMINI_API_KEY = st.secrets["GEMINI_API_KEY"]
+else:
+    GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+
 VISION_MODEL = "gemini-2.5-flash"
 
 # ==============================
