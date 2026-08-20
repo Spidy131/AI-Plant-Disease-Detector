@@ -1,5 +1,5 @@
 streamlit==1.59.2
-tensorflow==2.21.0
+tensorflow-cpu==2.21.0
 numpy==2.5.1
 pillow==12.3.0
 chromadb==1.5.9
