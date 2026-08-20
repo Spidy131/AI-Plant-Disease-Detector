@@ -1,10 +1,11 @@
-os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
+
+
 import os
 import time
 import tempfile
 import os
 import streamlit as st
-
+os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
 from training.predict import predict_image
 from vision.gemini_detector import detect_disease
 from embeddings.query_db import search_disease
