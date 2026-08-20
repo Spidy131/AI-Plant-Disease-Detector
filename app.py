@@ -78,6 +78,7 @@ if uploaded_file:
 
         with st.spinner("🔍 Analyzing leaf..."):
             if mode.startswith("🧠"):
+                from training.predict import predict_image
                 disease, confidence = predict_image(image_path)
                 disease_name = disease.replace("Tomato___","").replace("_"," ")
             else:
