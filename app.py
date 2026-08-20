@@ -1,7 +1,8 @@
-
+os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
 import os
 import time
 import tempfile
+import os
 import streamlit as st
 
 from training.predict import predict_image
