@@ -137,38 +137,37 @@ if uploaded_file:
         query = disease_name
 
         try:
-            knowledge = search_disease(f"Tomato {disease_name}")
+         knowledge = search_disease(f"Tomato {disease_name}")
 
-            if knowledge is None:
+if knowledge is None:
 
-                st.warning(
-                    "⚠️ Disease information is not available "
-                    "in the current knowledge base."
-                )
+    st.warning(
+        "⚠️ Disease information is not available "
+        "in the current knowledge base."
+    )
 
-            else:
+else:
 
-                info = format_disease_info(knowledge)
+    info = format_disease_info(knowledge)
 
-                st.divider()
-                st.subheader("📚 Disease Information")
+    st.divider()
+    st.subheader("📚 Disease Information")
 
-                e1, e2 = st.columns(2)
+    e1, e2 = st.columns(2)
 
-                with e1:
-                    with st.expander("🦠 Symptoms", expanded=True):
-                        st.write(info["Symptoms"])
+    with e1:
+        with st.expander("🦠 Symptoms", expanded=True):
+            st.write(info["Symptoms"])
 
-                    with st.expander("⚠ Cause", expanded=True):
-                        st.write(info["Cause"])
+        with st.expander("⚠️ Cause", expanded=True):
+            st.write(info["Cause"])
 
-                with e2:
-                    with st.expander("💊 Treatment", expanded=True):
-                        st.write(info["Treatment"])
+    with e2:
+        with st.expander("💊 Treatment", expanded=True):
+            st.write(info["Treatment"])
 
-                    with st.expander("🛡 Prevention", expanded=True):
-                        st.write(info["Prevention"])
-
+        with st.expander("🛡 Prevention", expanded=True):
+            st.write(info["Prevention"])
         except Exception as e:
             st.warning(f"Knowledge retrieval failed: {e}")
 
