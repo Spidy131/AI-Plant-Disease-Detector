@@ -16,6 +16,12 @@ if "GEMINI_API_KEY" in st.secrets:
     GEMINI_API_KEY = st.secrets["GEMINI_API_KEY"]
 else:
     GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+if GEMINI_API_KEY:
+print("Gemini API key loaded successfully")
+else:
+print("Gemini API key NOT loaded")
+
+print("Gemini model:", VISION_MODEL)
 
 if not GEMINI_API_KEY:
     raise ValueError(
