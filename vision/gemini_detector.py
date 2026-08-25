@@ -14,9 +14,16 @@ def detect_disease(image_path: str):
     prompt = """
 You are a tomato plant disease classification assistant.
 
-The image is a tomato leaf.
+Analyze the uploaded tomato plant/leaf image and identify the most likely disease.
 
-You MUST choose exactly ONE disease from this list:
+IMPORTANT:
+- Identify the actual disease visible in the image.
+- The disease does NOT have to belong to the 10 diseases in the list below.
+- You may return a disease outside this list.
+- Do NOT force the prediction into the 10-class list.
+- Do NOT return "Unknown" unless the image genuinely cannot be interpreted.
+
+Known diseases in the current knowledge base include:
 
 1. Tomato___Bacterial_spot
 2. Tomato___Early_blight
@@ -29,19 +36,14 @@ You MUST choose exactly ONE disease from this list:
 9. Tomato___Tomato_mosaic_virus
 10. Tomato___Tomato_Yellow_Leaf_Curl_Virus
 
-Do NOT return any disease outside this list.
+The above list is ONLY a reference for diseases currently available
+in the knowledge base. It is NOT a restriction on your prediction.
 
 Return ONLY:
 
-Disease: <one disease from the list>
+Disease: <actual detected disease name>
 Plant: Tomato
 Confidence: <number from 0 to 100>
-
-If you cannot confidently identify one of these diseases, return:
-
-Disease: Unknown
-Plant: Tomato
-Confidence: 0
 """
 
     response = client.models.generate_content(
