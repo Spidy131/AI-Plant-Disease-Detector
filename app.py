@@ -173,17 +173,12 @@ if uploaded_file:
 
             else:
 
-                response = detect_disease(
-                    image_path
-                )
+                response = detect_disease(image_path)
 
-                (
-                    disease_name,
-                    plant_name,
-                    confidence
-                ) = parse_gemini_response(
-                    response
-                )
+                if response is None:
+                    st.stop()
+                
+                disease_name, plant_name, confidence = parse_gemini_response(response)
 
                 # Clean Gemini disease name
                 disease_name = (
