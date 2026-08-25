@@ -3,8 +3,11 @@ from PIL import Image
 
 from config import GEMINI_API_KEY, VISION_MODEL
 
+
 # Create Gemini client
-client = genai.Client(api_key=GEMINI_API_KEY)
+client = genai.Client(
+    api_key=GEMINI_API_KEY
+)
 
 
 def detect_disease(image_path: str):
@@ -17,8 +20,9 @@ You are a tomato plant disease classification assistant.
 Analyze the uploaded tomato plant/leaf image and identify the most likely disease.
 
 IMPORTANT:
+
 - Identify the actual disease visible in the image.
-- The disease does NOT have to belong to the 10 diseases in the list below.
+- The disease does NOT have to belong to the 10 diseases listed below.
 - You may return a disease outside this list.
 - Do NOT force the prediction into the 10-class list.
 - Do NOT return "Unknown" unless the image genuinely cannot be interpreted.
@@ -46,12 +50,23 @@ Plant: Tomato
 Confidence: <number from 0 to 100>
 """
 
-    response = client.models.generate_content(
-        model=VISION_MODEL,
-        contents=[
-            prompt,
-            image
-        ]
-    )
+    try:
 
-    return response.text.strip()
+        response = client.models.generate_content(
+            model=VISION_MODEL,
+            contents=[
+                prompt,
+                image
+            ]
+        )
+
+        return response.text.strip()
+
+    except Exception as e:
+
+        print("========== GEMINI ERROR ==========")
+        print(type(e).__name__)
+        print(str(e))
+        print("==================================")
+
+        raise
