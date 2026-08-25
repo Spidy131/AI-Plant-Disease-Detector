@@ -10,7 +10,7 @@ from vision.gemini_detector import detect_disease
 from utils.formatter import format_disease_info
 from utils.gemini_parser import parse_gemini_response
 #from training.predict import predict_image
-from embeddings.query_db import search_disease
+#$from embeddings.query_db import search_disease
 
 
 st.set_page_config(
