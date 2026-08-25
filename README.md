@@ -4,7 +4,7 @@ An AI-powered tomato plant disease detection application that combines Gemini Vi
 
 🚀 Live Demo
 
-Try the application here:https://ai-plant-disease-detector-bwsupagp3udwewxmpwdria.streamlit.app/?utm_source=chatgpt.com
+Try the application here:https://ai-plant-disease-detector-bwsupagp3udwewxmpwdria.streamlit.app/
 
 🌿 AI Plant Disease Detector — Live Demo
 
