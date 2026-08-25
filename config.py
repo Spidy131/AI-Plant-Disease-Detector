@@ -17,6 +17,12 @@ if "GEMINI_API_KEY" in st.secrets:
 else:
     GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 
+if not GEMINI_API_KEY:
+    raise ValueError(
+        "GEMINI_API_KEY is not configured. "
+        "Add it to Streamlit Secrets or your local .env file."
+    )
+
 VISION_MODEL = "gemini-2.5-flash"
 
 # ==============================
