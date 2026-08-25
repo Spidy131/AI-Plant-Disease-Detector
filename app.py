@@ -137,7 +137,7 @@ if uploaded_file:
         query = disease_name
 
         try:
-         knowledge = search_disease(f"Tomato {disease_name}")
+             knowledge = search_disease(f"Tomato {disease_name}")
 
             if knowledge is None:
                     st.warning(
